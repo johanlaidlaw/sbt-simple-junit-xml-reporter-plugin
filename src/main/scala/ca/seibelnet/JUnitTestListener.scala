@@ -17,6 +17,7 @@ object JUnitTestReporting extends Plugin {
 
 class JUnitTestListener(val targetPath: String) extends TestReportListener {
 
+  println("Starting..")
   var currentOutput: Option[TestGroupXmlWriter] = None
 
   def testEvent(event: TestEvent) {
