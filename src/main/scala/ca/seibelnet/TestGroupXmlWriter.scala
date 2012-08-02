@@ -19,6 +19,7 @@ import java.text.SimpleDateFormat
 object TestGroupXmlWriter {
 
   def apply(name: String) = {
+    println("Building new TestGroupXmlWriter")
     new TestGroupXmlWriter(name)
   }
 }
